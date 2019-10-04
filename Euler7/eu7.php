@@ -1,7 +1,7 @@
 <?php
-$numberOfPrimes = 0;
-$primes = [];
-$i = 2;
+$numberOfPrimes = 1;
+$primes = [2];
+$i = 3;
 while($numberOfPrimes < 10002){
     if (isPrime($i)){
         $primes[$numberOfPrimes]=$i;
