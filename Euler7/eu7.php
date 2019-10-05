@@ -15,7 +15,7 @@ echo $primes[10000];
 
 function isPrime($a){
     $roof = ceil(sqrt($a));
-for($i=2; $i < $roof; $i++){
+for($i=2; $i <= $roof; $i++){
             if ($a % $i == 0) return 0;
         }
     
