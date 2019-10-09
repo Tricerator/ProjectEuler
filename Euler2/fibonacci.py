@@ -1,4 +1,7 @@
-def fibonacci(fib1,fib2,roof,mySum):
+
+#def fibonacci(fib1,fib2,roof,mySum):
+def fibonacci(fib1:int,fib2:int,roof:int,mySum:int) -> int:
+
     if fib2 > roof:
         return mySum
     else :
@@ -6,6 +9,5 @@ def fibonacci(fib1,fib2,roof,mySum):
             mySum = mySum + fib1
         fib1 = fib1 + fib2
         return fibonacci(fib2, fib1,roof,mySum)
-
 
 print(fibonacci(0,1,4000000,0))
